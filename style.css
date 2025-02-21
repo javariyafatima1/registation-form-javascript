@@ -1,40 +1,72 @@
-.cantear{
+.cantear {
     padding-top: 20px;
-margin-top: 20px;
-    margin-left: 450px;
-    background-color:black;
-    box-shadow: 0px 5px 13px 6px  rgba(77, 64, 64, 0.945);
+    margin: 20px auto;  
+    background-color: black;
+    box-shadow: 0px 5px 13px 6px rgba(77, 64, 64, 0.945);
     color: white;
-    width: 20%;
-    padding-left: 50px;
+    width: 90%; 
+    max-width: 350px; 
+    padding: 20px;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
-    height: 280px;
-
+    height: auto; 
+    text-align: center;
+    border-radius: 10px;
 }
-h2{
-    padding-left: 480px;
+
+h2 {
+    text-align: center; /* Centering heading */
     font-size: 30px;
+    margin-bottom: 20px;
 }
-body{
-    background-color:rgba(128, 128, 128, 0.404);
+
+body {
+    background-color: rgba(128, 128, 128, 0.404);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.cantear input{
-width: 200px;
-height: 30px;
 
-
-
-
+.cantear input {
+    width: 90%; 
+    max-width: 250px;
+    height: 35px;
+    margin-bottom: 10px;
+    padding: 5px;
 }
-button{
-    width: 80px;
-    height: 30px;
+
+button {
+    width: 100px;
+    height: 35px;
     margin-top: 10px;
 }
-table{
 
-    margin-left: 90px;
+table {
+    margin: 50px auto;
+    width: 90%;
+    max-width: 500px;
+}
 
-    margin-top: 50px;
+
+@media (max-width: 768px) {
+    .cantear {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .cantear input {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+    }
 }
